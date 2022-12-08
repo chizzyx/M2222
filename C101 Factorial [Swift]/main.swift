@@ -29,19 +29,19 @@ func outcomePrint(array: [Int]) { // This function handles the print statements 
         }
     }
     print("The final result is: \(array[0]).")
-
+    
 }
 func exec() { // Main function that will be called on 
-var x = n
-var outcomeArray : [Int] = []
-while x != 0 {
-    print("Calculating factorial(\(x))...")
-    let outcome = factorial(n: x) // Calls on the factorial() function.
-    outcomeArray.append(outcome)
-    if outcome == 1 {
-        outcomePrint(array: outcomeArray)
-    }
+    var x = n
+    var outcomeArray : [Int] = []
+    while x != 0 {
+        print("Calculating factorial(\(x))...")
+        let outcome = factorial(n: x) // Calls on the factorial() function.
+        outcomeArray.append(outcome)
+        if outcome == 1 {
+            outcomePrint(array: outcomeArray)
+        }
     x -= 1
-}
+    }
 }
 exec()
